@@ -7,21 +7,49 @@ import { ArrowRight } from 'lucide-react';
 const artikelen = [
   {
     id: 1,
+    titel: "De Toekomst van Werk in het Tijdperk van Humanoïde Robots",
+    excerpt: "Een diepgaande analyse van hoe humanoïde robots de arbeidsmarkt en economie zullen transformeren.",
+    auteur: "Dr. Lisa van der Berg",
+    datum: new Date('2024-03-15'),
+    afbeelding: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800",
+    categorie: "Toekomstvisie",
+    inhoud: `
+      De integratie van humanoïde robots in onze samenleving staat op het punt een revolutionaire verschuiving teweeg te brengen in hoe we werk en economie benaderen. Met de snelle vooruitgang in robotica en kunstmatige intelligentie, staan we aan de vooravond van een tijdperk waarin menselijke arbeid fundamenteel zal veranderen.
+
+      Impact op de Arbeidsmarkt:
+      • Automatisering van routinematige taken
+      • Verschuiving naar creatief en strategisch werk
+      • Nieuwe beroepen in robotbeheer en -ontwikkeling
+      • Kortere werkweken voor mensen
+
+      Economische Transformatie:
+      • Verhoogde productiviteit en efficiëntie
+      • Universeel basisinkomen als mogelijke oplossing
+      • Nieuwe economische modellen gebaseerd op robotarbeid
+      • Herverdeling van welvaart en resources
+
+      Maatschappelijke Aanpassingen:
+      • Focus op persoonlijke ontwikkeling en creativiteit
+      • Meer tijd voor familie en hobby's
+      • Levenslang leren wordt de norm
+      • Nieuwe vormen van zingeving buiten traditioneel werk
+
+      Deze ontwikkelingen brengen zowel uitdagingen als kansen met zich mee. Het is cruciaal dat we als samenleving proactief nadenken over hoe we deze transitie willen vormgeven, zodat iedereen kan profiteren van de technologische vooruitgang.
+
+      De rol van onderwijs en omscholing wordt steeds belangrijker. We moeten mensen voorbereiden op een toekomst waarin samenwerking met robots de norm is en waarin menselijke vaardigheden zoals creativiteit, empathie en strategisch denken centraal staan.
+
+      Conclusie:
+      De toekomst met humanoïde robots biedt ongekende mogelijkheden voor menselijke ontwikkeling en welvaart. Door nu de juiste keuzes te maken in beleid en implementatie, kunnen we een samenleving creëren waarin technologie ten dienste staat van menselijk welzijn en waarin iedereen kan floreren.
+    `
+  },
+  {
+    id: 2,
     titel: "Tesla's Optimus Robot: Een Nieuwe Mijlpaal",
     excerpt: "Diepgaande analyse van de nieuwste ontwikkelingen in Tesla's humanoïde robotproject.",
     auteur: "Sarah Chen",
     datum: new Date('2024-03-10'),
-    afbeelding: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800",
-    categorie: "Technologie"
-  },
-  {
-    id: 2,
-    titel: "De Toekomst van Zorgrobots",
-    excerpt: "Hoe humanoïde robots de gezondheidszorg transformeren.",
-    auteur: "David Wilson",
-    datum: new Date('2024-03-08'),
     afbeelding: "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?auto=format&fit=crop&q=80&w=800",
-    categorie: "Gezondheidszorg"
+    categorie: "Technologie"
   },
   {
     id: 3,
@@ -43,7 +71,7 @@ export function Articles() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {artikelen.map((artikel) => (
-              <Link to={`/articles/${artikel.id}`} key={artikel.id} className="group">
+              <Link to={`/artikelen/${artikel.id}`} key={artikel.id} className="group">
                 <article className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
                   <div className="relative">
                     <img 

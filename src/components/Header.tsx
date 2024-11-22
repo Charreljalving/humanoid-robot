@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { CircuitBoard, Menu, X } from 'lucide-react';
+import { Bot, Menu, X } from 'lucide-react';
 import { NewsletterSubscribe } from './NewsletterSubscribe';
 
 export function Header() {
@@ -21,11 +21,11 @@ export function Header() {
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-3">
           <div className="relative">
-            <CircuitBoard className="w-8 h-8 text-white" />
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-white rounded-full" />
+            <Bot className="w-8 h-8 text-white" />
+            <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-500 rounded-full animate-pulse" />
           </div>
           <span className="text-xl font-bold text-white">
-            RoboTracker
+            Humanoid Robot
           </span>
         </Link>
 

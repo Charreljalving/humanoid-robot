@@ -11,6 +11,7 @@ import { Articles } from './pages/Articles';
 import { Article } from './pages/Article';
 import { Login } from './pages/Login';
 import { Admin } from './pages/Admin';
+import { NotFound } from './pages/NotFound';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
               <Route path="/artikelen/:id" element={<Article />} />
               <Route path="/login" element={<Login />} />
               <Route path="/admin" element={<Admin />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />

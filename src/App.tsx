@@ -11,6 +11,9 @@ import { Articles } from './pages/Articles';
 import { Article } from './pages/Article';
 import { Login } from './pages/Login';
 import { Admin } from './pages/Admin';
+import { NewArticle } from './pages/admin/NewArticle';
+import { ManageArticles } from './pages/admin/ManageArticles';
+import { EditArticle } from './pages/admin/EditArticle';
 import { NotFound } from './pages/NotFound';
 
 export default function App() {
@@ -29,6 +32,9 @@ export default function App() {
               <Route path="/artikelen/:id" element={<Article />} />
               <Route path="/login" element={<Login />} />
               <Route path="/admin" element={<Admin />} />
+              <Route path="/admin/articles/new" element={<NewArticle />} />
+              <Route path="/admin/articles/manage" element={<ManageArticles />} />
+              <Route path="/admin/articles/edit/:id" element={<EditArticle />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

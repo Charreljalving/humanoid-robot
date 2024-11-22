@@ -7,7 +7,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=2000"
-          alt="Moderne Humanoïde Robot"
+          alt="Moderne Humanoid Robot"
           className="w-full h-full object-cover brightness-50"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-transparent" />
@@ -17,10 +17,10 @@ export function Hero() {
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
             De Toekomst van
-            <span className="block">Humanoïde Robots</span>
+            <span className="block">Humanoid Robots</span>
           </h1>
           <p className="text-xl text-neutral-200 mb-12 max-w-2xl">
-            Volg de evolutie van humanoïde robots, van baanbrekend onderzoek tot 
+            Volg de evolutie van humanoid robots, van baanbrekend onderzoek tot 
             praktische toepassingen die onze toekomst vormgeven.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

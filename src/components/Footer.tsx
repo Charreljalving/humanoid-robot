@@ -5,9 +5,9 @@ import { CircuitBoard, Linkedin, Twitter, Instagram, Facebook } from 'lucide-rea
 export function Footer() {
   const navigation = [
     { name: 'Robots', href: '/robots' },
-    { name: 'Bedrijven', href: '/companies' },
-    { name: 'Artikelen', href: '/articles' },
-    { name: 'Over Ons', href: '/about' },
+    { name: 'Bedrijven', href: '/bedrijven' },
+    { name: 'Artikelen', href: '/artikelen' },
+    { name: 'Over ons', href: '/over-ons' },
     { name: 'Contact', href: '/contact' }
   ];
 
